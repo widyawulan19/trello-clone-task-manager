@@ -6,6 +6,7 @@ import ProjectView from './Page/ProjectView';
 import Features from './Page/Features';
 import Screenshot from './Page/Screenshot';
 import Stack from './Page/Stack';
+import Learning from './Page/Learning';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Features />
       <Screenshot />
       <Stack />
+      <Learning />
     </div>
   );
 }

@@ -1,0 +1,83 @@
+.learning-container {
+    background-color: #fff;
+    width: 100%;
+    height: 70vh;
+    /* padding: 20px; */
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.learning-container .learning-header {
+    width: 80%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.learning-header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #1F2936;
+    margin: 0px;
+}
+
+.learning-header h4 {
+    font-size: 18px;
+    font-weight: normal;
+    width: 65vw;
+    text-align: center;
+    color: #68717C;
+    padding: 0px;
+    margin: 0px;
+}
+
+.learning-container .learning-content {
+    /* border: 1px solid red; */
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.learning-content .learning-box {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.learning-box h2 {
+    width: 100%;
+    padding-left: 50px;
+}
+
+.learning-box .text {
+    width: 90%;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 10px;
+    margin: 5px;
+    /* border: 1px solid red;s */
+}
+
+.text p {
+    padding: 0px;
+    margin: 0px;
+    color: #4d545e;
+    font-size: 17px;
+}
+
+.text .icon {
+    font-size: 20px;
+    color: #2FC362;
+}
