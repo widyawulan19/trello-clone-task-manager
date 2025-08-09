@@ -4,6 +4,7 @@ import Hero from './Page/Hero';
 import ScrollSVGLine from './Page/ScrollSVGLine';
 import ProjectView from './Page/ProjectView';
 import Features from './Page/Features';
+import Screenshot from './Page/Screenshot';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <ProjectView />
       <Features />
+      <Screenshot />
     </div>
   );
 }

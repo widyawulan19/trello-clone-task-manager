@@ -1,0 +1,88 @@
+.ss-container {
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ss-title {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.ss-title h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #1F2936;
+    margin: 0px;
+}
+
+.ss-title h4 {
+    font-size: 18px;
+    font-weight: normal;
+    width: 65vw;
+    margin: 0px;
+    /* border: 1px solid red; */
+    text-align: center;
+    color: #68717C;
+}
+
+.ss-box-content {
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    height: 75vh;
+    padding: 10px;
+    width: 90%;
+
+    /* penuh layar */
+    overflow-y: auto;
+    /* biar bisa discroll manual */
+    scroll-behavior: smooth;
+}
+
+.screenshot-masonry {
+    column-count: 4;
+    column-gap: 20px;
+    padding: 40px;
+}
+
+.screenshot-item {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.screenshot-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsif */
+@media (max-width: 1024px) {
+    .screenshot-masonry {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .screenshot-masonry {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .screenshot-masonry {
+        column-count: 1;
+    }
+}
