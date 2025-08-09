@@ -3,6 +3,7 @@
     width: 100%;
     height: 100vh;
     gap: 20px;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,7 +60,8 @@
     margin-bottom: 20px;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.15);
+    border: 3px solid #863DE5;
 }
 
 .screenshot-item img {

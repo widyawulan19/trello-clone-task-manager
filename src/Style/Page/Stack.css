@@ -1,0 +1,105 @@
+.stack-container {
+    background-color: #F3F4F6;
+    height: 60vh;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.stack-container .stack-title {
+    margin-top: 50px;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stack-title h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #1F2936;
+    margin: 0px;
+}
+
+.stack-title p {
+    font-size: 20px;
+    width: 65vw;
+    text-align: center;
+    color: #68717C;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* WRAPPER untuk overflow */
+.btn-stack-wrapper {
+    width: 90%;
+    height: 50vh;
+    padding: 15px 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    /* border: 1px solid blue; */
+}
+
+/* FLEX untuk horizontal scrolling */
+.btn-stack-container {
+    display: flex;
+    gap: 10px;
+    animation: scroll-left 15s linear infinite;
+}
+
+.btn-stack-container .btn-box {
+    min-width: 200px;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 15vw;
+}
+
+.btn-stack-container .btn-box:hover {
+    border: 1px solid #7098ee;
+    box-shadow: 0px 4px 8px #3f77f163;
+    transform: scale(1.09);
+}
+
+.btn-box .btn-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-name h4 {
+    margin: 0px;
+    font-size: 18px;
+    color: #1F2936;
+}
+
+.btn-name p {
+    margin: 0px;
+    font-size: 14px;
+    color: #68717C;
+}
+
+/* Animasi berjalan dari kanan ke kiri */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+    /* -50% karena data digandakan */
+}

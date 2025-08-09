@@ -5,6 +5,7 @@ import ScrollSVGLine from './Page/ScrollSVGLine';
 import ProjectView from './Page/ProjectView';
 import Features from './Page/Features';
 import Screenshot from './Page/Screenshot';
+import Stack from './Page/Stack';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <ProjectView />
       <Features />
       <Screenshot />
+      <Stack />
     </div>
   );
 }
