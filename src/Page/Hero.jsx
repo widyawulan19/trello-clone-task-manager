@@ -25,7 +25,9 @@ const Hero=()=> {
 
                 </div>
                 <div className="hn-right">
-                    <FiGithub  className='hn-icon'/>
+                    <a href="https://github.com/widyawulan19/">
+                        <FiGithub  className='hn-icon'/>
+                    </a>
                 </div>
             </div>
 
@@ -53,7 +55,11 @@ const Hero=()=> {
                     {/* BUTTON  */}
                     <div className="btn-demo">
                         <button className='demo'> <IoPlayOutline size={20}/> Live Demo</button>
-                        <button><FiGithub/> View Source Code</button>
+                        <button>
+                            <a href="https://github.com/widyawulan19/">
+                                <FiGithub/> View Source Code
+                            </a>
+                        </button>
                     </div>
                 </div>
             </div>

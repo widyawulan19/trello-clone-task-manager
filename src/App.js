@@ -7,6 +7,7 @@ import Features from './Page/Features';
 import Screenshot from './Page/Screenshot';
 import Stack from './Page/Stack';
 import Learning from './Page/Learning';
+import Footer from './Page/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Screenshot />
       <Stack />
       <Learning />
+      <Footer />
     </div>
   );
 }

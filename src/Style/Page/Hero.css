@@ -209,6 +209,12 @@
     font-weight: bold;
 }
 
+.btn-demo button a {
+    text-decoration: none;
+    color: #2A67E7;
+    gap: 10px;
+}
+
 .btn-demo .demo:hover {
     transform: scale(1.05);
     border: 2px solid #2A67E7;
