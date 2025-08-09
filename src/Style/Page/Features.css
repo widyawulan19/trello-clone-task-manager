@@ -50,6 +50,20 @@
     padding: 10px;
 }
 
+/* Kondisi awal sebelum muncul */
+.features-box.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Setelah masuk viewport */
+.features-box.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 .features-box-container .features-box {
     display: flex;
     flex-direction: column;
