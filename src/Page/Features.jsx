@@ -83,7 +83,7 @@ const Features = () => {
   }, []);
 
   return (
-    <div className='features-container'>
+    <div className='features-container' id='features'>
       <div className="feature-title">
         <h1>Key Features</h1>
         <h3>Built with modern web technologies to deliver a seamless task management experience</h3>

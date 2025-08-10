@@ -1,6 +1,6 @@
 .hero-container {
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -11,13 +11,14 @@
 
 /* NAVBAR  */
 
-.hero-container .hero-navbar {
-    position: sticky;
+.hero-navbar {
+    position: fixed;
+    /* dari sticky jadi fixed */
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1200;
-    /* biar di atas konten lain */
-    box-sizing: border-box;
-    padding: 15px 20px;
+    padding: 15px 0px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -25,6 +26,10 @@
     border: 1px solid #eee;
     background-color: #FAFBFF;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hn-left {
+    margin-left: 20px;
 }
 
 .hn-left h2 {
@@ -42,6 +47,12 @@
     justify-content: center;
 }
 
+/* Hide hamburger by default */
+.hn-hamburger {
+    display: none;
+    cursor: pointer;
+}
+
 .hn-center button {
     border: 1px solid #FAFBFF;
     padding: 10px 20px;
@@ -50,12 +61,23 @@
     width: 15vw;
     background-color: #FAFBFF;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hn-center button:hover {
     /* border-bottom: 1px solid #2A67E7; */
     color: #2A67E7;
 }
+
+
+
+.hn-right {
+    /* border: 1px solid blue; */
+    margin-right: 20px;
+}
+
 
 .hn-right .hn-icon {
     font-size: 25px;
@@ -248,3 +270,253 @@
 }
 
 /* END HERO SECTION  */
+
+/* MEDIA QUERY  */
+/* Default styles (desktop first) */
+
+/* Mobile */
+/* Desktop (≥ 992px) */
+@media (min-width: 992px) {}
+
+/* Tablet (≥ 576px dan < 992px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .hero-container {
+        height: 90vh;
+    }
+
+    .hero-navbar {
+        /* border: 1px solid red; */
+        /* width: 99%; */
+    }
+
+    .floating {
+        display: none;
+    }
+
+    .hero-section-main h1 {
+        font-size: 45px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .btn-demo .demo,
+    .btn-demo button {
+        width: 40%;
+    }
+
+    /* button navbar  */
+    .hn-center button {
+        width: 10vw;
+        font-size: 12px;
+        /* border: 1px solid blue; */
+    }
+
+    .hn-right {
+        /* border: 1px solid blue; */
+        margin-right: 20px;
+    }
+
+    /* end button navbar  */
+}
+
+
+/* Mobile ( < 576px) */
+@media (max-width: 575.98px) {
+
+    .hero-container {
+        height: 100vh;
+    }
+
+    /* NAVBAR  */
+    .hero-navbar {
+        justify-content: flex-end;
+        position: sticky !important;
+        top: 0;
+        z-index: 1200;
+    }
+
+    .hn-left {
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+
+    .hn-center {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        /* sesuaikan dengan navbar height */
+        right: 10px;
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 6px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        width: 150px;
+        /* margin-right: 10px; */
+    }
+
+
+    /* Show nav buttons when menu open */
+    .hn-center.open {
+        display: flex;
+    }
+
+    /* Show hamburger */
+    .hn-hamburger {
+        display: block;
+        color: #4B5562;
+        margin-right: 10px;
+    }
+
+    /* Optional: style nav buttons */
+    .hn-center button {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    /* END NAVBAR  */
+
+    .floating {
+        display: none;
+    }
+
+    /* Main  */
+    .hero-section-main .gradient-text {
+        /* border: 1px solid blue; */
+        text-align: center;
+        font-size: 65px;
+    }
+
+    .hero-section-main h1 {
+        font-size: 45px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .hero-section-main .des {
+        /* border: 1px solid red; */
+        width: 90%;
+        padding: 10px;
+    }
+
+    .des p {
+        font-size: 20px;
+    }
+
+    /* BUTTON  */
+    .hero-section .btn-demo {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-demo .demo,
+    .btn-demo button {
+        width: 60%;
+    }
+}
+
+/* HEIGHT BREAKPOIN  */
+@media (min-width:370px) and (max-width:570px) {
+    .hero-container {
+        height: 100vh;
+    }
+
+    /* NAVBAR  */
+    .hero-navbar {
+        justify-content: flex-end;
+        position: sticky !important;
+        top: 0;
+        z-index: 1200;
+    }
+
+    .hn-left {
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+
+    .hn-center {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        /* sesuaikan dengan navbar height */
+        right: 10px;
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 6px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        width: 150px;
+        /* margin-right: 10px; */
+    }
+
+
+    /* Show nav buttons when menu open */
+    .hn-center.open {
+        display: flex;
+    }
+
+    /* Show hamburger */
+    .hn-hamburger {
+        display: block;
+        color: #4B5562;
+        margin-right: 10px;
+    }
+
+    /* Optional: style nav buttons */
+    .hn-center button {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    /* END NAVBAR  */
+
+    .floating {
+        display: none;
+    }
+
+    /* Main  */
+    .hero-section-main .gradient-text {
+        /* border: 1px solid blue; */
+        text-align: center;
+        font-size: 55px;
+    }
+
+    .hero-section-main h1 {
+        font-size: 35px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .hero-section-main .des {
+        /* border: 1px solid red; */
+        width: 90%;
+        padding: 10px;
+    }
+
+    .des p {
+        font-size: 18px;
+    }
+
+    /* BUTTON  */
+    .hero-section .btn-demo {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-demo .demo,
+    .btn-demo button {
+        width: 60%;
+    }
+}

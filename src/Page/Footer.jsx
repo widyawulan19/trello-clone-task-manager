@@ -7,7 +7,7 @@ import { IoLogoInstagram } from "react-icons/io5";
 
 const Footer=()=> {
   return (
-    <div className='footer-container'>
+    <div className='footer-container' id='explore'>
         <div className="cta-content">
             <h1>Ready to Explore</h1>
             <p>Check out the live demo or dive into the source code to see how it's built</p>

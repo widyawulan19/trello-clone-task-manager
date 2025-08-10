@@ -8,11 +8,14 @@ import Screenshot from './Page/Screenshot';
 import Stack from './Page/Stack';
 import Learning from './Page/Learning';
 import Footer from './Page/Footer';
+import ScrollToTopButton from './components/ScrollToTopButton';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
       <ScrollSVGLine />
+      <Navbar />
       <Hero />
       <ProjectView />
       <Features />
@@ -20,6 +23,7 @@ function App() {
       <Stack />
       <Learning />
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }

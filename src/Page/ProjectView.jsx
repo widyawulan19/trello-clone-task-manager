@@ -46,7 +46,7 @@ const ProjectView=()=> {
     ];
 
   return (
-    <div className='project-container'>
+    <div className='project-container' id='overview'>
         <h1>Project Overview</h1>
         <p>This Trello clone demonstrates modern web development practices with a focus on user experience, real-time collaboration, and scalable architecture. Built from the ground up with performance and maintainability in mind.</p>
         <div className="btn-project">

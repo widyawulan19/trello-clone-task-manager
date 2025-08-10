@@ -44,7 +44,7 @@ const Learning=()=> {
     ]
 
   return (
-    <div className='learning-container'>
+    <div className='learning-container' id='learning'>
         <div className="learning-header">
             <h1>Learning Outcomes</h1>
             <h4>Key skills and knowledge gained through building this comprehensive application</h4>

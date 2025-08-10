@@ -55,7 +55,7 @@ const Stack=()=> {
     const InfiniteData = [...IconProject, ...IconProject];
 
   return (
-    <div className='stack-container'>
+    <div className='stack-container' id='technologies'>
         <div className="stack-title">
             <h1>Technology Stack</h1>
             <p>Built with modern, industry-standard technologies for scalability and performance</p>

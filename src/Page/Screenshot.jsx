@@ -52,7 +52,7 @@ useEffect(() => {
 
 
   return (
-    <div className="ss-container">
+    <div className="ss-container" id='screenshot'>
         <div className="ss-title">
             <h1>Feature Showcase</h1>
             <h4>
