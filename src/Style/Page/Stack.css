@@ -1,12 +1,29 @@
 .stack-container {
     background-color: #F3F4F6;
-    height: 60vh;
-    /* border: 1px solid red; */
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    padding: 40px 0;
+    /* lebih besar biar ada ruang */
+    overflow-x: hidden;
+    position: relative;
+    /* supaya konten tetap di dalam */
+}
+
+.stack-container .stack-box {
+    max-width: 1200px;
+
+    /* border: 1px solid green; */
+    /* biar tidak terlalu lebar */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Inter', sans-serif;
+
 }
 
 .stack-container .stack-title {
@@ -36,23 +53,30 @@
 
 /* WRAPPER untuk overflow */
 .btn-stack-wrapper {
-    width: 90%;
-    height: 50vh;
-    padding: 15px 10px;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    margin-top: 20px;
-    /* border: 1px solid blue; */
+    /* cegah keluar ke bawah/atas */
+    position: relative;
 }
 
 /* FLEX untuk horizontal scrolling */
 .btn-stack-container {
+    /* border: 1px solid orange; */
+    width: 80%;
     display: flex;
     gap: 10px;
     animation: scroll-left 15s linear infinite;
 }
 
 .btn-stack-container .btn-box {
-    min-width: 200px;
+    min-width: 180px;
+    /* sedikit diperkecil */
+    max-width: 220px;
+    /* biar nggak terlalu besar */
     border: 1px solid #eee;
     border-radius: 16px;
     padding: 20px;
@@ -65,6 +89,7 @@
     justify-content: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     width: 15vw;
+    /* default untuk desktop */
 }
 
 .btn-stack-container .btn-box:hover {
@@ -103,3 +128,67 @@
 
     /* -50% karena data digandakan */
 }
+
+/* MEDIA QUERY  */
+/* Desktop (≥ 992px) */
+@media (min-width: 992px) {
+    .wf-create {
+        /* border: 1px solid orangered; */
+        width: 25%;
+        /* bisa disesuaikan */
+    }
+}
+
+/* Tablet (≥ 576px dan < 992px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .wf-create {
+        /* border: 1px solid blue; */
+        width: 45%;
+    }
+}
+
+/* Mobile ( < 576px) */
+@media (max-width: 575.98px) {
+    .stack-container {
+        /* border: 1px solid blue; */
+    }
+
+    .stack-container .stack-box {
+        /* border: 1px solid green; */
+    }
+
+    .stack-title h1 {
+        /* border: 1px solid red; */
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .stack-title p {
+        width: 90%;
+        /* border: 1px solid blue; */
+    }
+
+    .btn-stack-container {
+        gap: 8px;
+        /* jarak antar card lebih kecil */
+    }
+
+    .btn-stack-container .btn-box {
+        width: 70vw;
+        /* lebih besar di mobile tapi muat */
+        min-width: unset;
+        padding: 15px;
+    }
+
+    .btn-name h4 {
+        font-size: 16px;
+    }
+
+    .btn-name p {
+        font-size: 12px;
+    }
+}
+
+/* HEIGHT BREAKPOIN  */
+@media (min-height:370px) and (max-height:570px) {}

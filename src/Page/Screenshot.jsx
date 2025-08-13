@@ -42,7 +42,7 @@ useEffect(() => {
         if (container.scrollTop >= totalHeight) {
           container.scrollTop = 0;
         }
-      }, 20); // ubah kecepatan di sini
+      }, 50); // ubah kecepatan di sini
     };
 
     startAutoScroll();

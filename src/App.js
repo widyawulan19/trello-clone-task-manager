@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <ScrollSVGLine />
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <ProjectView />
       <Features />

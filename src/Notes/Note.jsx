@@ -1,53 +1,52 @@
-import React, { useEffect, useRef } from 'react';
-import './Screenshots.css';
+import React from 'react';
+import { IoPlayOutline } from "react-icons/io5";
+import { FiGithub } from "react-icons/fi";
+import '../Style/Page/Hero.css';
+// import '../Style/Components/Navbar.css'
+import hero1 from '../Assets/hero1.png';
+import hero2 from '../Assets/hero2.png';
+import Navbar from '../components/Navbar';
 
-export default function Screenshots() {
-  const scrollRef = useRef(null);
-
-  const images = [
-    '/images/web1.png',
-    '/images/mobile1.png',
-    '/images/web2.png',
-    '/images/mobile2.png',
-    '/images/web3.png',
-    '/images/mobile3.png',
-    '/images/web4.png',
-    '/images/mobile4.png',
-    '/images/web5.png',
-    '/images/mobile5.png'
-  ];
-
-  useEffect(() => {
-    const container = scrollRef.current;
-    let scrollInterval;
-
-    const startAutoScroll = () => {
-      scrollInterval = setInterval(() => {
-        if (container) {
-          // kalau udah mentok ke bawah, balik ke atas
-          if (container.scrollTop + container.clientHeight >= container.scrollHeight) {
-            container.scrollTop = 0;
-          } else {
-            container.scrollTop += 1; // kecepatan scroll
-          }
-        }
-      }, 20); // semakin kecil semakin cepat
-    };
-
-    startAutoScroll();
-
-    return () => clearInterval(scrollInterval);
-  }, []);
-
+const Hero = () => {
   return (
-    <div className="screenshot-wrapper" ref={scrollRef}>
-      <div className="screenshot-masonry">
-        {images.map((src, i) => (
-          <div className="screenshot-item" key={i}>
-            <img src={src} alt={`shot-${i}`} />
+    <section className="hero-section-wrapper">
+      <div className='hero-container'>
+        <Navbar/>
+        {/* SECTION */}
+        <div className="hero-section">
+          {/* Komponen mengapung */}
+          <div className="floating">
+            <div className="floating-1">
+              <img src={hero1} alt="" />
+            </div>
+            <div className="floating-2">
+              <img src={hero2} alt="" />
+            </div>
           </div>
-        ))}
+
+          {/* MAIN CONTENT */}
+          <div className="hero-section-main">
+            <h1 className='gradient-text'>Trello Clone</h1>
+            <h1>Task Management App</h1>
+            <div className="des">
+              <p>A task and team management web app built with React, Node.js, and PostgreSQL.</p>
+              <p>Featuring modern drag-and-drop functionality and real-time collaboration.</p>
+            </div>
+
+            {/* BUTTON */}
+            <div className="btn-demo">
+              <button className='demo'> <IoPlayOutline size={20}/> Live Demo</button>
+              <button>
+                <a href="https://github.com/widyawulan19/">
+                  <FiGithub/> View Source Code
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
-}
+};
+
+export default Hero;

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { FiGithub } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
-import '../Style/Page/Hero.css'; // Kalau mau, bisa bikin CSS khusus navbar
+// import '../Style/Components/Navbar.css'
+import '../Style/Page/Hero.css'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

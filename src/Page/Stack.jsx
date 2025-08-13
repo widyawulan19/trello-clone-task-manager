@@ -56,24 +56,26 @@ const Stack=()=> {
 
   return (
     <div className='stack-container' id='technologies'>
-        <div className="stack-title">
-            <h1>Technology Stack</h1>
-            <p>Built with modern, industry-standard technologies for scalability and performance</p>
-        </div>
-        
-        <div className="btn-stack-wrapper">
-            <div className="btn-stack-container">
-            {InfiniteData.map((feature, idx) => (
-                <div className='btn-box' key={idx}>
-                <div className="btn-icon" style={{ color: feature.color }}>
-                    {feature.icon}
+        <div className="stack-box">
+            <div className="stack-title">
+                <h1>Technology Stack</h1>
+                <p>Built with modern, industry-standard technologies for scalability and performance</p>
+            </div>
+            
+            <div className="btn-stack-wrapper">
+                <div className="btn-stack-container">
+                {InfiniteData.map((feature, idx) => (
+                    <div className='btn-box' key={idx}>
+                    <div className="btn-icon" style={{ color: feature.color }}>
+                        {feature.icon}
+                    </div>
+                    <div className="btn-name">
+                        <h4>{feature.title}</h4>
+                        <p>{feature.desc}</p>
+                    </div>
+                    </div>
+                ))}
                 </div>
-                <div className="btn-name">
-                    <h4>{feature.title}</h4>
-                    <p>{feature.desc}</p>
-                </div>
-                </div>
-            ))}
             </div>
         </div>
     </div>

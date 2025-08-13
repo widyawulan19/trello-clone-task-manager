@@ -1,5 +1,6 @@
 .ss-container {
     background-color: #fff;
+    padding: 10px 0px;
     width: 100%;
     height: 100vh;
     gap: 20px;
@@ -81,10 +82,19 @@
     .screenshot-masonry {
         column-count: 2;
     }
+
+    .ss-title {
+        margin-top: 15px;
+    }
 }
 
 @media (max-width: 480px) {
     .screenshot-masonry {
         column-count: 1;
     }
+
+    .ss-title {
+        margin-top: 15px;
+    }
+
 }
