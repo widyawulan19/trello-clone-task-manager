@@ -1,0 +1,16 @@
+.App {
+  background-color: #FAFBFF;
+  /* background-color: red; */
+  width: 100vw;
+  height: 100vh;
+  /* padding: 70px; */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FAFBFF;
+  /* ganti sesuai tinggi navbar */
+  /* sama kayak navbar */
+}

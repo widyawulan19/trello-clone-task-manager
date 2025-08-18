@@ -1,0 +1,194 @@
+.stack-container {
+    background-color: #F3F4F6;
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    padding: 40px 0;
+    /* lebih besar biar ada ruang */
+    overflow-x: hidden;
+    position: relative;
+    /* supaya konten tetap di dalam */
+}
+
+.stack-container .stack-box {
+    max-width: 1200px;
+
+    /* border: 1px solid green; */
+    /* biar tidak terlalu lebar */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.stack-container .stack-title {
+    margin-top: 50px;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stack-title h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #1F2936;
+    margin: 0px;
+}
+
+.stack-title p {
+    font-size: 20px;
+    width: 65vw;
+    text-align: center;
+    color: #68717C;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* WRAPPER untuk overflow */
+.btn-stack-wrapper {
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* cegah keluar ke bawah/atas */
+    position: relative;
+}
+
+/* FLEX untuk horizontal scrolling */
+.btn-stack-container {
+    /* border: 1px solid orange; */
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    animation: scroll-left 15s linear infinite;
+}
+
+.btn-stack-container .btn-box {
+    min-width: 180px;
+    /* sedikit diperkecil */
+    max-width: 220px;
+    /* biar nggak terlalu besar */
+    border: 1px solid #eee;
+    border-radius: 16px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 15vw;
+    /* default untuk desktop */
+}
+
+.btn-stack-container .btn-box:hover {
+    border: 1px solid #7098ee;
+    box-shadow: 0px 4px 8px #3f77f163;
+    transform: scale(1.09);
+}
+
+.btn-box .btn-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-name h4 {
+    margin: 0px;
+    font-size: 18px;
+    color: #1F2936;
+}
+
+.btn-name p {
+    margin: 0px;
+    font-size: 14px;
+    color: #68717C;
+}
+
+/* Animasi berjalan dari kanan ke kiri */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+    /* -50% karena data digandakan */
+}
+
+/* MEDIA QUERY  */
+/* Desktop (≥ 992px) */
+@media (min-width: 992px) {
+    .wf-create {
+        /* border: 1px solid orangered; */
+        width: 25%;
+        /* bisa disesuaikan */
+    }
+}
+
+/* Tablet (≥ 576px dan < 992px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .wf-create {
+        /* border: 1px solid blue; */
+        width: 45%;
+    }
+}
+
+/* Mobile ( < 576px) */
+@media (max-width: 575.98px) {
+    .stack-container {
+        /* border: 1px solid blue; */
+    }
+
+    .stack-container .stack-box {
+        /* border: 1px solid green; */
+    }
+
+    .stack-title h1 {
+        /* border: 1px solid red; */
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .stack-title p {
+        width: 90%;
+        /* border: 1px solid blue; */
+    }
+
+    .btn-stack-container {
+        gap: 8px;
+        /* jarak antar card lebih kecil */
+    }
+
+    .btn-stack-container .btn-box {
+        width: 70vw;
+        /* lebih besar di mobile tapi muat */
+        min-width: unset;
+        padding: 15px;
+    }
+
+    .btn-name h4 {
+        font-size: 16px;
+    }
+
+    .btn-name p {
+        font-size: 12px;
+    }
+}
+
+/* HEIGHT BREAKPOIN  */
+@media (min-height:370px) and (max-height:570px) {}

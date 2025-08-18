@@ -1,0 +1,50 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #2A67E7;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.scroll-svg {
+    position: fixed;
+    top: 0;
+    right: -80px;
+    /* geser keluar lebih banyak */
+    height: 110vh;
+    width: 150px;
+    /* tetap proporsional */
+    pointer-events: none;
+    z-index: 9998;
+}
+
+/* Mobile: geser lebih ke kanan */
+@media (max-width: 575.98px) {
+    .scroll-to-top {
+        bottom: 20px;
+        right: 15px;
+        /* lebih nempel ke kanan */
+    }
+
+    .scroll-svg {
+        right: -100px;
+        width: 140px;
+        /* border: 1px solid red; */
+    }
+}
+
+@media (min-height:370px) and (max-height:570px) {
+    .scroll-to-top {
+        bottom: 20px;
+        right: 15px;
+        /* lebih nempel ke kanan */
+    }
+
+}

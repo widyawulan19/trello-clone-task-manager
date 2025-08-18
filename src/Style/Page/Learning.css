@@ -1,0 +1,152 @@
+.learning-container {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    /* padding: 20px; */
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+
+    /* border: 1px solid green; */
+}
+
+.learning-container .learning-header {
+    width: 80%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.learning-header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #1F2936;
+    margin: 0px;
+}
+
+.learning-header h4 {
+    font-size: 18px;
+    font-weight: normal;
+    width: 65vw;
+    text-align: center;
+    color: #68717C;
+    padding: 0px;
+    margin: 0px;
+}
+
+.learning-container .learning-content {
+    /* border: 1px solid red; */
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.learning-content .learning-box {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.learning-box h2 {
+    width: 100%;
+    padding-left: 50px;
+}
+
+.learning-box .text {
+    width: 90%;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 10px;
+    margin: 5px;
+    /* border: 1px solid red;s */
+}
+
+.text p {
+    padding: 0px;
+    margin: 0px;
+    color: #4d545e;
+    font-size: 17px;
+}
+
+.text .icon {
+    font-size: 20px;
+    color: #2FC362;
+}
+
+/* MEDIA QUERY  */
+/* Desktop (≥ 992px) */
+@media (min-width: 992px) {
+    .wf-create {
+        /* border: 1px solid orangered; */
+        width: 25%;
+        /* bisa disesuaikan */
+    }
+}
+
+/* Tablet (≥ 576px dan < 992px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .wf-create {
+        /* border: 1px solid blue; */
+        width: 45%;
+    }
+}
+
+/* Mobile ( < 576px) */
+@media (max-width: 575.98px) {
+    .learning-container {
+        gap: 20px;
+    }
+
+    .learning-header h1 {
+        text-align: center;
+        font-size: 32px;
+        width: 100%;
+        /* border: 1px solid green; */
+        margin: 10px 0px;
+    }
+
+    .learning-header h4 {
+        width: 100%;
+    }
+
+    .learning-container .learning-content {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+}
+
+/* HEIGHT BREAKPOIN  */
+@media (min-height:370px) and (max-height:570px) {
+    .learning-container {
+        gap: 20px;
+    }
+
+    .learning-header h1 {
+        text-align: center;
+        font-size: 32px;
+        width: 100%;
+        /* border: 1px solid green; */
+        margin: 10px 0px;
+    }
+
+    .learning-header h4 {
+        width: 100%;
+    }
+
+    .learning-container .learning-content {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+}

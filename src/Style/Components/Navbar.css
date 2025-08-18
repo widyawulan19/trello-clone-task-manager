@@ -1,0 +1,79 @@
+.navbar-container {
+    position: fixed;
+    top: 0;
+    /* wajib 0 supaya mepet */
+    left: 0;
+    width: 98%;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.hn-left {
+    margin-left: 20px;
+
+}
+
+.hn-left h2 {
+    color: #1F2936;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.hn-center {
+    /* border: 1px solid red; */
+    padding: 0px 15px;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hide hamburger by default */
+.hn-hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hn-center button {
+    border: 1px solid #FAFBFF;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #4B5562;
+    width: 15vw;
+    background-color: #FAFBFF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hn-center button:hover {
+    /* border-bottom: 1px solid #2A67E7; */
+    color: #2A67E7;
+}
+
+
+
+.hn-right {
+    /* border: 1px solid blue; */
+    margin-right: 20px;
+}
+
+
+.hn-right .hn-icon {
+    font-size: 25px;
+    color: #4B5562;
+    cursor: pointer;
+}
+
+.hn-icon:hover {
+    color: #2A67E7;
+}
