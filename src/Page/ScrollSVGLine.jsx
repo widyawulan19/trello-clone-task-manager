@@ -5,21 +5,23 @@ export default function ScrollSVGLine() {
   const [length, setLength] = useState(0);
   const [totalLength, setTotalLength] = useState(0);
 
-  useEffect(() => {
-    const path = document.querySelector('#scrollPath');
-    const total = path.getTotalLength();
-    setTotalLength(total);
+useEffect(() => {
+  const path = document.querySelector('#scrollPath');
+  if (!path) return; // aman
+  const total = path.getTotalLength();
+  setTotalLength(total);
 
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPercent = scrollTop / docHeight;
-      setLength(total * scrollPercent);
-    };
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = scrollTop / docHeight;
+    setLength(total * scrollPercent);
+  };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  window.addEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
+
 
   return (
     <svg className="scroll-svg" viewBox="0 0 200 1000">

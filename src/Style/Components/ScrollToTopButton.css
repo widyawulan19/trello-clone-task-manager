@@ -16,10 +16,11 @@
 .scroll-svg {
     position: fixed;
     top: 0;
-    right: -80px;
+    right: 0;
+    /* right: -80px; */
     /* geser keluar lebih banyak */
     height: 110vh;
-    width: 150px;
+    width: 50px;
     /* tetap proporsional */
     pointer-events: none;
     z-index: 9998;
