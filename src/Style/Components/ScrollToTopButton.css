@@ -13,18 +13,27 @@
     transition: all 0.3s ease;
 }
 
-.scroll-svg {
+.scroll-line-container {
     position: fixed;
+    left: 50px;
+    /* jarak dari kiri */
     top: 0;
-    right: 0;
-    /* right: -80px; */
-    /* geser keluar lebih banyak */
-    height: 110vh;
-    width: 50px;
-    /* tetap proporsional */
-    pointer-events: none;
-    z-index: 9998;
+    width: 2px;
+    /* tebal garis */
+    height: 100%;
+    background-color: #eeeeee00;
+    /* warna garis dasar */
+    z-index: 1000;
 }
+
+.scroll-line {
+    width: 100%;
+    height: 0%;
+    background-color: #5211cb;
+    /* warna garis animasi */
+    transition: height 0.1s ease-out;
+}
+
 
 /* Mobile: geser lebih ke kanan */
 @media (max-width: 575.98px) {
