@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoPlayOutline } from "react-icons/io5";
 import { FiGithub } from "react-icons/fi";
+import { MdDescription } from "react-icons/md";
 import '../Style/Page/Hero.css';
 // import '../Style/Components/Navbar.css'
 import hero1 from '../Assets/hero1.png';
@@ -72,10 +73,10 @@ const Hero = () => {
 
             {/* BUTTON */}
             <div className="btn-demo">
-              <button className='demo'> <IoPlayOutline size={20}/> Live Demo</button>
+              <button className='demo'> Let's Connect</button>
               <button>
-                <a href="https://github.com/widyawulan19/trello-inod.git">
-                  <FiGithub/> View Source Code
+                <a href="https://inodstudiomanagement.vercel.app">
+                  <FiGithub/> Demo Website
                 </a>
               </button>
             </div>

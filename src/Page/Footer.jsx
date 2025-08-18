@@ -13,8 +13,10 @@ const Footer=()=> {
             <p>Check out the live demo or dive into the source code to see how it's built</p>
             <div className="cta-btn">
                 <div className="btn-box">
-                    <RiShareBoxFill className='icon-btn'/>
-                    Try Live Demo
+                    <a href="https://inodstudiomanagement.vercel.app">
+                        <RiShareBoxFill className='icon-btn'/>
+                        Try Live Demo
+                    </a>
                 </div>
                 <div className="btn-box">
                     <a href="https://github.com/widyawulan19/trello-clone-task-manager.git">
