@@ -2,6 +2,8 @@ import React from 'react'
 import { IoLogoReact, IoLogoNodejs, IoCode, IoLayers,IoLogoCss3 } from "react-icons/io5";
 import { GoDatabase } from "react-icons/go";
 import '../Style/Page/ProjectView.css'
+import { FaTasks, FaClipboardList, FaUsers, FaChartLine } from 'react-icons/fa';
+
 
 const ProjectView=()=> {
     //DATA PROJECT
@@ -45,11 +47,42 @@ const ProjectView=()=> {
         
     ];
 
-  return (
+return (
     <div className='project-container' id='overview'>
-        <h1>Project Overview</h1>
-        <p>This Trello clone demonstrates modern web development practices with a focus on user experience, real-time collaboration, and scalable architecture. Built from the ground up with performance and maintainability in mind.</p>
-        <div className="btn-project">
+      <h1>Project Overview</h1>
+      <p>
+        This project was developed for <strong>Inod Studio</strong> to efficiently manage all company activities. The web application provides several key functionalities:
+      </p>
+      <ul className='project-features'>
+        <li>
+          <FaTasks className='icon' />
+          <span><strong>Trello-like task management:</strong> Create workspaces, boards, and cards to track project progress in real-time.</span>
+        </li>
+        <li>
+          <FaClipboardList className='icon' />
+          <span><strong>Order tracking:</strong> Manage music orders from start to completion seamlessly.</span>
+        </li>
+        <li>
+          <FaUsers className='icon' />
+          <span><strong>Employee management:</strong> Maintain employee data and schedules to support smooth operations.</span>
+        </li>
+        <li>
+          <FaChartLine className='icon' />
+          <span><strong>Progress monitoring:</strong> Visualize project progress and ensure timely completion of tasks.</span>
+        </li>
+      </ul>
+      <p>
+        Overall, the website streamlines internal operations, enhances team collaboration, and improves efficiency across all company processes.
+      </p>
+    </div>
+  );
+}
+
+export default ProjectView
+
+{/* <p>This Trello clone demonstrates modern web development practices with a focus on user experience, real-time collaboration, and scalable architecture. Built from the ground up with performance and maintainability in mind.</p> */}
+
+        {/* <div className="btn-project">
             {IconProject.map((feature)=>(
                 <div className='btn-box' key={feature.id}>
                     <div className="btn-icon" style={{color:feature.color}}>
@@ -60,9 +93,4 @@ const ProjectView=()=> {
                     </div>
                 </div>
             ))}
-        </div>
-    </div>
-  )
-}
-
-export default ProjectView
+        </div> */}

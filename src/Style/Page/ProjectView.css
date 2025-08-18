@@ -3,7 +3,7 @@
     width: 100%;
     height: 80vh;
     margin: 0px;
-    padding: 0px;
+    padding: 30px 20px;
     /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
@@ -11,6 +11,53 @@
     justify-content: center;
     font-family: 'Inter', sans-serif;
 }
+
+.project-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #5211cb;
+    text-align: center;
+}
+
+.project-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.project-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    /* jarak icon dan teks */
+    margin-bottom: 20px;
+}
+
+.project-features .icon {
+    color: #5211cb;
+    font-size: 1.8rem;
+    flex-shrink: 0;
+    /* supaya icon tidak mengecil */
+}
+
+.project-features span {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.project-features span strong {
+    color: #5211cb;
+}
+
+
+
 
 .project-container h1 {
     font-size: 50px;
@@ -25,7 +72,7 @@
     /* border: 1px solid red; */
     text-align: center;
     color: #68717C;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     word-spacing: 0.5px;
 }
 
