@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/trello-clone-task-manager/static/css/main.f2e1cc6b.css",
-    "main.js": "/trello-clone-task-manager/static/js/main.6519ff50.js",
+    "main.css": "/trello-clone-task-manager/static/css/main.dd32fe1c.css",
+    "main.js": "/trello-clone-task-manager/static/js/main.d6d8540a.js",
     "static/js/453.f4d9b7cd.chunk.js": "/trello-clone-task-manager/static/js/453.f4d9b7cd.chunk.js",
     "static/media/ss19.png": "/trello-clone-task-manager/static/media/ss19.75339902c882e1b4a6ce.png",
     "static/media/ss18.png": "/trello-clone-task-manager/static/media/ss18.c17e0cb24f8836a6b56e.png",
@@ -25,12 +25,12 @@
     "static/media/hero2.png": "/trello-clone-task-manager/static/media/hero2.a4f1a9c2358746d2651d.png",
     "static/media/logo.svg": "/trello-clone-task-manager/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/trello-clone-task-manager/index.html",
-    "main.f2e1cc6b.css.map": "/trello-clone-task-manager/static/css/main.f2e1cc6b.css.map",
-    "main.6519ff50.js.map": "/trello-clone-task-manager/static/js/main.6519ff50.js.map",
+    "main.dd32fe1c.css.map": "/trello-clone-task-manager/static/css/main.dd32fe1c.css.map",
+    "main.d6d8540a.js.map": "/trello-clone-task-manager/static/js/main.d6d8540a.js.map",
     "453.f4d9b7cd.chunk.js.map": "/trello-clone-task-manager/static/js/453.f4d9b7cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2e1cc6b.css",
-    "static/js/main.6519ff50.js"
+    "static/css/main.dd32fe1c.css",
+    "static/js/main.d6d8540a.js"
   ]
 }
