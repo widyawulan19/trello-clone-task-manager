@@ -49,10 +49,13 @@ const ProjectView=()=> {
 
 return (
     <div className='project-container' id='overview'>
-      <h1>Project Overview</h1>
-      <p>
-        This project was developed for <strong>Inod Studio</strong> to efficiently manage all company activities. The web application provides several key functionalities:
-      </p>
+      <div className="project-header">
+        <h1>Project Overview</h1>
+        <p>
+          This project was developed for <strong style={{color:'#5211cb'}}>Inod Studio</strong> to efficiently manage all company activities. The web application provides several key functionalities:
+        </p>
+      </div>
+      
       <ul className='project-features'>
         <li>
           <FaTasks className='icon' />
@@ -71,7 +74,7 @@ return (
           <span><strong>Progress monitoring:</strong> Visualize project progress and ensure timely completion of tasks.</span>
         </li>
       </ul>
-      <p>
+      <p className='text'>
         Overall, the website streamlines internal operations, enhances team collaboration, and improves efficiency across all company processes.
       </p>
     </div>
