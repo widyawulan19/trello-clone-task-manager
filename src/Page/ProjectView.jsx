@@ -82,18 +82,3 @@ return (
 }
 
 export default ProjectView
-
-{/* <p>This Trello clone demonstrates modern web development practices with a focus on user experience, real-time collaboration, and scalable architecture. Built from the ground up with performance and maintainability in mind.</p> */}
-
-        {/* <div className="btn-project">
-            {IconProject.map((feature)=>(
-                <div className='btn-box' key={feature.id}>
-                    <div className="btn-icon" style={{color:feature.color}}>
-                        {feature.icon}
-                    </div>
-                    <div className="btn-name">
-                        <h4>{feature.title}</h4>
-                    </div>
-                </div>
-            ))}
-        </div> */}
