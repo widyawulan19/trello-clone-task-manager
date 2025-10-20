@@ -75,7 +75,7 @@ const Hero = () => {
             <div className="btn-demo">
               <button className='demo'> Let's Connect</button>
               <button>
-                <a href="https://inodstudiomanagement.vercel.app">
+                <a href="https://trello-inod.vercel.app">
                   <FiGithub/> Demo Website
                 </a>
               </button>
